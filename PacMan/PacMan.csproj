@@ -54,6 +54,7 @@
     <Compile Include="GameGL\GamePacManPlayer.cs" />
     <Compile Include="GameGL\Ghost.cs" />
     <Compile Include="GameGL\HorizontalGhost.cs" />
+    <Compile Include="GameGL\RandomGhost.cs" />
     <Compile Include="GameGL\VerticalGhost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

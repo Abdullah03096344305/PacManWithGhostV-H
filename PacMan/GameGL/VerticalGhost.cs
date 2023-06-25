@@ -17,7 +17,7 @@ namespace PacMan.GameGL
         {           
             GameCell currentCell = CurrentCell;
             GameCell nextCell = currentCell.nextCell(direction);
-            if (nextCell != null)
+            if (nextCell != null )
             {
                 GameObjectType nextCellObjectType = nextCell.CurrentGameObject.GameObjectType;
                 if (nextCellObjectType == GameObjectType.REWARD || nextCellObjectType == GameObjectType.WALL)

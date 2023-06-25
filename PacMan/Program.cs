@@ -18,6 +18,7 @@ namespace PacMan
             GamePacManPlayer pacman = new GamePacManPlayer('p', start);
             HorizontalGhost horizontalGhost = new HorizontalGhost(grid.getCell(16, 10));
             VerticalGhost verticalGhost = new VerticalGhost(grid.getCell(20, 8));
+            RandomGhost randomGhost = new RandomGhost(grid.getCell(5, 5));
            
            
             printMaze(grid);
@@ -47,7 +48,8 @@ namespace PacMan
                 }
                 GameCell ghostCell = horizontalGhost.Move();
                 GameCell ghostVCell = verticalGhost.Move();
-                if (ghostCell == pacman.CurrentCell || ghostVCell == pacman.CurrentCell)
+                GameCell ghostRCell = randomGhost.Move();
+                if (ghostCell == pacman.CurrentCell || ghostVCell == pacman.CurrentCell || ghostRCell == pacman.CurrentCell)
                 {                    
                     Console.WriteLine("Game Over");                   
                     gameRunning = false;
